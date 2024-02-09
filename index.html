@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar section -->
+    <div class=' '>
+            <header class="lg:px-16 px-4 right-0 left-0 top-0 flex fixed max-sm:shadow sm:px-6 flex-wrap items-center py-2 " style="backdrop-Filter:blur(10px)" >
+              <div class='w-3 h-7 bg-fuchsia-900'></div>
+              <div class='w-2 m-2 h-4 bg-fuchsia-900'></div>
+              <div class="flex-1 flex justify-between items-center">
+                <a href="#" class="text-2xl text-fuchsia-900 font-bold">Lecturama</a>
+              </div>
+              <div class='bg-cover bg-center bg-no-repeat bg-fixed' style="background-image:url('image/tempsnip.png'); background-size: contain; background-position: right;">
+                <!-- {/* Rest of the navbar content goes here */} -->
+              </div>
+              <label for="menu-toggle" class="pointer-cursor md:hidden block">
+                <svg class="fill-current text-gray-900"
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <title>menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </label>
+              <input class="hidden" type="checkbox" id="menu-toggle" />
+              <div class="hidden md:flex md:items-center md:w-auto w-full md:gap-4 " id="menu">
+                <nav>
+                  <ul class="md:flex md:gap-5 items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block font-bold" href="#">Home</a></li>
+                    <li class='flex items-center font-bold'><a class="md:p-2 py-3 px-0 block" href="#">Browse</a> <span><MdOutlineArrowDropDown /></span></li>
+                    <li class='flex items-center font-bold'><a class="md:p-2 py-3 px-0 block" href="#">My Books</a> <span><MdOutlineArrowDropDown /></span></li>
+                    <li class='flex items-center font-bold'><a class="md:p-2 py-3 px-0 block mb-0" href="#">More</a> <span><MdOutlineArrowDropDown /></span></li>
+                  </ul>
+                </nav>
+                <a
+                  class="rounded-3xl bg-fuchsia-900 px-8 py-2 text-sm font-medium text-white shadow"
+                  href="#"
+                >
+                  LOGIN
+                </a>
+              </div>
+            </header> 
+        <!-- fin navbar section -->
+        <!-- section 1 -->
+        <section class="py-0" id="home">
+            <div class="bg-holder flex items-center bg-no-repeat d-none md:block bg-right-top bg-contain h-screen" style="background-image:url('image/tempsnip.png')">
+            <div class="pt-28 px-8 max-sm:pt-64 md:min-h-0">
+                <div class="w-7/12 w-6/12  max-sm:w-full max-lg-full max-lg:mt-[400px] px-2 py-6 text-center md:text-left">
+                  <h1 class="mt-6 mb-4 text-4xl md:text-6xl lg:text-7xl font-semibold leading-snug md:leading-normal">Today's research, <br class="block lg:hidden xl:block"/>tomorrow's innovation</h1>
+                  <p class="mb-4 text-xl">Accelerating research discovery to shape a better future </p>
+                <div class="pt-3">
+                    <form>
+                      <div class="flex items-center w-full md:w-2/4 lg:w-1/2"><input class="form-control p-2 text-center bg-violet-100 rounded-full  font-base w-full" id="formGroupExampleInput" type="text" placeholder="Search books, articles, keywords"/> 
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- fin section 1 -->
+        <!-- section 2 -->
+        <section>
+            <div class="mx-auto max-lg:mt-[350px] mt-10 md:mt-[300px] sm:mt-[120px] ">
+              <div class="text-center justify-center">
+                <div class="col-auto text-5xl">
+                  <h1 class="font-semibold text-amber-300">Our <span class="text-fuchsia-900">Resources</span></h1>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:mt-24 max-sm:mt-5 ">
+                <div class=" mb-4 mb-lg-0 text-center">
+                  <div class="px-6 px-lg-3">
+                    <img class="object-cover object-center w-24 h-24 mx-auto mb-4" src="image/researchers.png" alt="Researchers" />
+                    <h3 class="text-lg mb-4 font-semibold">Researchers</h3>
+                    <p class=" text-center  text-xl text-slate-400">Register online Discover tools <br /> and manage alerts Learn <br /> about how to access</p>
+                  </div>
+                </div>
+                <div class=" mb-4 mb-lg-0 text-center">
+                  <div class="px-6 px-lg-3">
+                    <img class="object-cover object-center w-24 h-24 mx-auto mb-4" src="image/librarian.png" alt="Librarian" />
+                    <h3 class="text-lg mb-4 font-semibold">Librarian</h3>
+                    <p class="leading-relaxed text-xl text-slate-400">Manage your account View <br /> products and solutions Find <br /> resources and support</p>
+                  </div>
+                </div>
+                <div class=" mb-4 mb-lg-0 text-center">
+                  <div class="px-6 px-lg-3">
+                    <img class="object-cover object-center w-24 h-24 mx-auto mb-4" src="image/societies.png" alt="Societies" />
+                    <h3 class="text-lg mb-4 font-semibold">Societies</h3>
+                    <p class="leading-relaxed text-xl text-slate-400">Publish with Wiley Explore <br /> our resource library Learn <br /> about topics and trends</p>
+                  </div>
+                </div>
+                <div class=" mb-4 mb-lg-0 text-center">
+                  <div class="px-6 px-lg-3">
+                    <img class="object-cover object-center w-24 h-24 mx-auto mb-4" src="image/authors.png" alt="Authors" />
+                    <h3 class="text-xl mb-4 font-semibold">Authors</h3>
+                    <p class="leading-relaxed text-xl text-slate-400">Submit a paper Track <br /> your article Learn <br /> about Open Access</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- fn section 2 -->
+        <!-- section 3 -->
+        <section class="py-0" id="home">
+            <div class="bg-holder flex flex-row-reverse items-center bg-no-repeat d-none md:block bg-left-top bg-contain h-screen" style="background-image:url('image/temps.png')">
+              <div class="pt-38 max-sm:pt-52 relative md:min-h-0">
+                <div class="md:relative px-4 sm:px-6 lg:px-8">
+                    <div class="md:absolute top-24  md:right-0 px-2 py-6 md:text-right text-xl leading-10">
+                      <h1 class="font-semibold text-start text-4xl text-amber-300 ">Our <span class="text-fuchsia-900 text-4xl">Libraries</span></h1>
+                      <p class=' text-start text-slate-400'>Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit Id numquam minus rem<br /> nobis expedita exercitationem itaque accusamus,<br /> corrupti deleniti labore obcaecati deserunt eius<br /> recusandae ea ad, nulla consequuntur odio voluptas!</p>
+                      <div class='text-start'>
+                      <a
+                        class="rounded-3xl bg-fuchsia-900 px-8 py-2 text-sm font-medium text-white shadow"
+                        href="#"
+                      >
+                        Learn More
+                      </a>
+                      </div>
+                    </div>
+                 
+                </div> 
+              </div>
+            </div>
+        </section>
+        <!-- fin section 3 -->
+        <!-- section4 -->
+        <section class="py-0">
+            <h1 class="font-semibold text-center text-4xl text-amber-300 mt-10 ">Best
+            <span class="text-fuchsia-900 text-4xl">Seller Books</span></h1>
+            <div class="w-full max-w-md mx-auto mt-12">
+              <div class="bg-white py-10  rounded-lg p-4 shadow">
+                <div class="flex items-center justify-between">
+                <div class=''>
+                  <h2 class=" font-semibold">The Lord of the Rings 
+                  </h2>
+                  <span>J.R.R Tolkien</span>
+                  </div>
+                  <div class='flex gap-2 text-amber-300'><FaStar  class='bg-amer-300' /><FaStar  class='bg-amer-300' /><FaStar class='bg-amer-300' /><FaStar class='bg-amer-300' /><FaStar class='bg-amer-300' />
+                  </div>
+                  <span class='flex items-center'><PiCurrencyDollarBold />12</span>
+                  <IoIosArrowDown class="cursor-pointer" />
+                </div>
+            
+                  <div class="mt-2">
+                    <p class="text-gray-700">Content for Accordion 1</p>
+                  </div>
+              </div>
+              <div class="bg-white w-full mx-auto py-10 rounded-lg p-4 mt-4 shadow">
+                <div class="flex items-center justify-between">
+                <div class=''>
+                  <h2 class=" font-semibold">The Lord of the Rings 
+                  </h2>
+                  <span>J.R.R Tolkien</span>
+                  </div>
+                  <div class='flex gap-2 text-amber-300'><FaStar  class='bg-amer-300' /><FaStar  class='bg-amer-300' /><FaStar class='bg-amer-300' /><FaStar class='bg-amer-300' /><FaStar class='bg-amer-300' />
+                  </div>
+                  <span class='flex items-center'><PiCurrencyDollarBold />16</span>
+                  <IoIosArrowDown class="cursor-pointer" />
+                </div>
+               
+                  <div class="mt-2">
+                    <p class="text-gray-700">Content for Accordion 2</p>
+                  </div>
+               
+              </div>
+              <div class="bg-white py-10 rounded-lg p-4 mt-4 shadow">
+                <div class="flex items-center justify-between">
+                <div class=''>
+                  <h2 class=" font-semibold">The Lord of the Rings 
+                  </h2>
+                  <span>J.R.R Tolkien</span>
+                  </div>
+                  <div class='flex gap-2 text-amber-300'><FaStar  class='bg-amer-300' /><FaStar  class='bg-amer-300' /><FaStar class='bg-amer-300' /><FaStar class='bg-amer-300' /><FaStar class='bg-amer-300' />
+                  </div>
+                  <span class='flex items-center'><PiCurrencyDollarBold />18</span>
+                  <IoIosArrowDown class="cursor-pointer" />
+                </div>
+              
+                  <div class="mt-2">
+                    <p class="text-gray-700">Content for Accordion 3</p>
+                  </div>
+               
+              </div>
+            </div>
+          <div class='text-center mt-12'>
+              <a
+                class="rounded-3xl bg-fuchsia-900 px-8 py-2 text-sm font-medium text-white shadow"
+                href="#"
+              >
+                Find More
+              </a>
+          </div>
+        </section>
+        <!--fin section 4 -->
+        <section class="py-0" id="home">
+            <div class="bg-holder flex items-center bg-no-repeat d-none md:block bg-right-top bg-contain h-screen" style="background-image:url('image/snip.png')">
+              <div class=" pt-44 px-14 max-sm:pt-64 md:min-h-0">
+                <div class="md:w-7/12 lg:w-6/12 px-2 py-6 md:text-left ">
+                <h1 class="font-semibold text-3xl text-amber-300 leading-10">Create 
+                <span class="text-fuchsia-900 text-3xl">your own <br />
+                mobile library
+                </span></h1>
+                  <p class="mb-4 text-xl text-slate-400 leading-10">Create your own library on your phone <br /> easily with Sevi mobile app. Get it free on <br /> Google Play Store for android and Download <br /> on the App Store for iOS for free. </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="row flex-center bg-white border-t-2 py-4 border-fuchsia-900">
+            <div class="col-auto mb-2">
+           <div class='flex max-sm:hidden'>
+           <div class='w-3 h-7 bg-fuchsia-900'></div>
+            <div class='w-2 m-2 h-4 bg-fuchsia-900'></div>
+            <div class="flex-1 flex justify-between items-center">
+            <a href="#" class="text-2xl text-fuchsia-900 font-bold ">Lecturama</a>
+            </div>
+           </div>
+              <p class="mb-0 fs--1 my-2 text-center">© This template is made with &nbsp;&nbsp;by&nbsp;</p>
+            </div>
+            <div class=" col-auto text-center my-4">
+              <ul class="list-unstyled flex justify-center list-inline mb-0">
+                <li class="list-inline-item me-3 text-fuchsia-900"><a href="#!">
+                    <i class="fa-brands fa-youtube"></i> </a></li>
+                <li class="list-inline-item me-3 text-fuchsia-900"><a href="#!">
+                    <i class="fa-brands fa-twitter"></i>  </a></li>
+                <li class="list-inline-item me-3 text-fuchsia-900"><a class="text-decoration-none" href="#!">
+                    <i class="fa-brands fa-facebook"></i>  </a></li>
+                <li class="list-inline-item me-3 text-fuchsia-900"><a href="#!">
+                    <i class="fa-brands fa-linkedin"></i> </a></li>
+                <li class="list-inline-item me-3 text-fuchsia-900"><a href="#!">
+                    <i class="fa-brands fa-square-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
